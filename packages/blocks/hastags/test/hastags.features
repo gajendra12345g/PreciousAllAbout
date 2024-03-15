@@ -1,0 +1,16 @@
+Feature: HashtagsWeb
+
+    Scenario: User navigates to HashtagsWeb
+        Given I am a User loading HashtagsWeb
+        Given I am a User loading HashtagsWeb without  hastags
+        When I navigate to the HashtagsWeb
+        Then HashtagsWeb will load with out errors
+        And I can set the default state with out error
+        And Autocomplete renders without errors
+        And should update the state with the new input value
+        And should call hashtagFn when the input value is not empty
+        And should not call hashtagFn when the input value is empty
+        And I am a user attempting to fetch hashcodes based on search value
+        And the user should be able to remove the chip by clicking on the delete icon
+        And should display options when user types in the input
+        And I can leave the screen with out errors

@@ -1,0 +1,7 @@
+Feature: multitieredcart
+
+    Scenario: User navigates to multitieredcart
+        Given I am a User loading multitieredcart
+        When I navigate to the multitieredcart
+        Then multitieredcart will load with out errors
+        And allProducts api will load

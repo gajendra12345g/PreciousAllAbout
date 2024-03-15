@@ -1,0 +1,9 @@
+Feature: advancedsearch
+
+    Scenario: User navigates to advancedsearch
+        Given I am a User loading advancedsearch
+        When I navigate to the advancedsearch
+        Then I can enter in search bar input
+        Then I can click on recommendations and move to advanced search with value
+        Then I can click on recommendations and move to advanced search with out value
+        And I can leave the screen with out errors

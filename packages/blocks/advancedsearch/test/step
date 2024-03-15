@@ -1,0 +1,20 @@
+Feature: advancedsearch
+
+    Scenario: User navigates to advancedsearch
+        Given I am a User loading advancedsearch
+        When I navigate to the advancedsearch
+        Then I can click AdvancedSearch button
+        Then advancedsearch will load with out errors
+        Then I can view AdvancedSearch item
+        Then I can click on Filter Button to show hide filters
+        Then should set searchType to val and call search function
+        Then should set searchType to empty string and call search function
+        Then should update selectedSort and trigger search
+        Then I can input text in search bar
+        Then I can input text in search bar with #
+        Then I can click on the search button and api will have data
+        Then I can click on the search button and api will do not have data
+        Then I can click on the gototop button
+        Then should set isSmallScreen state to true for small screens
+        Then should set isSmallScreen state to false for large screens
+        And I can leave the screen with out errors

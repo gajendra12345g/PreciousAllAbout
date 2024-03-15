@@ -1,0 +1,17 @@
+Feature: UserProfileDetails
+
+    Scenario: User navigates to UserProfileDetails
+        Given I am a User loading UserProfileDetails
+        When I navigate to the UserProfileDetails
+        Then UserProfileDetails will load with out errors
+        Then UserProfileDetails api will load
+        Then sets emailInputError and saveBtnEnable when email is invalid
+        Then resets emailInputError and updates saveBtnEnable when email is valid
+        Then sets numberInputError and saveBtnEnable when phone is invalid
+        Then resets numberInputError and updates saveBtnEnable when phone is valid
+        Then deleteAccountApi api will load
+        Then deleteImageApi api will load
+        Then deleteImageApi1 api will load
+        Then deleteAccountApi api will load
+        And I can leave the screen with out errors
+        

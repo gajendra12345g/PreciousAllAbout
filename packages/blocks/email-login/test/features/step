@@ -1,0 +1,63 @@
+Feature: Email Address Account Log In
+
+    Scenario: User navigates to Email Log In
+        Given I am a User attempting to Log In with a Email
+        When I navigate to the Log In Screen
+        Then I can select Log In with Soical Media Account
+        And navigates to LandingPageAfterLoginContributor if roleType is 1
+        And navigates to tickets if roleType is 2
+        And save info if roleType is 0
+        And calls callBack if roleType is not 1
+        And sets state and calls scrollToDiv
+        And calls successCallBack when successfully logged in
+        And calls errorCallBack when login fails
+        And I can toggle the Remember Me with out errors
+        And scrolls into view with smooth behavior
+        And I can click join Qstock
+        And I can select the Log In button with out errors
+        And should set error state for empty email
+        And should set error state for invalid email format
+        And should set error state for empty password
+        And should set error state for invalid password format
+        And I can select the Forgot Password button with out errors
+        And I can enter a email address with out errors
+        And if role type 0 then check role and type email
+        And should call checkRole when roleType is 0 and target name is email with a valid email
+        And I can enter a password with out errors
+        And I can leave the screen with out errors
+
+    Scenario: Empty Email Address
+        Given I am a User attempting to Log In with a Email Address
+        When I Log In with an empty Email Address
+        Then Log In Should Fail
+
+    Scenario: Email Address and Empty Password
+        Given I am a User attempting to Log In with a Email Address
+        When I Log In with a Email Address and empty Password
+        Then Log In Should Fail
+
+    Scenario: Password and Empty Email Address  
+        Given I am a User attempting to Log In with a Email Address
+        When I Log In with a Password and empty Email Address
+        Then Log In Should Fail
+    
+    Scenario: Email Address and Password
+        Given I am a Registed User attempting to Log In with a Email Address
+        When I Log In with Email Address and Password
+        Then Log In Should Succeed
+        And RestAPI will return token
+
+    Scenario: Remember Me - Email Address Account Log In 
+        Given I am a Registed User who has already Logged In and selected Remember Me
+        When I navigate to Email Address Account Log In
+        Then The Country Code, Email Address and Password will be restored
+    
+    Scenario: Render screen for User login form
+        Given I am a User loading Login form
+        When I navigate to the Login form
+        Then Login form will load with out errors
+
+    Scenario: Render screen for Contributor login form
+        Given I am a Contributor loading Login form
+        When I navigate to the Login form
+        Then Login form will load with out errors

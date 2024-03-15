@@ -1,0 +1,16 @@
+Feature: multitieredpricing
+
+    Scenario: User navigates to multitieredpricing
+        Given I am a User loading multitieredpricing
+        When I navigate to the multitieredpricing
+        Then I can enter text with out errors
+        When I can click back button
+        Then I can back using button
+        When I can select resolution
+        Then I can update resolution
+        When I can call api
+        Then I can call api without error
+        When I can handle userType
+        Then I can handle userType without error
+        When I can handle cart
+        Then I can handle cart without error

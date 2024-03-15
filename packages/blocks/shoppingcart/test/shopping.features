@@ -1,0 +1,47 @@
+Feature: shoppingcart
+
+    Scenario: User navigates to ShoppingCartOrders
+        Given I am a User loading ShoppingCartOrders
+        When I navigate to the ShoppingCartOrders
+        And I can click the button
+        When Show Order List Data Api will call
+        When Show Order List Data Api will call show error
+        When show all the input boxes
+        Then I can enter values in first name field
+        Then I can enter values in last name field
+        When Get All Coupon Api will call
+        Then all Coupons will display on the modal
+        When Coupon Code valid Api will call
+        When Coupon Code field is empty
+        Then It will valid that Coupon is Valid or not
+        Then ShoppingCartOrders will load with out errors
+        When there is no item in cart
+        Then If no item in cart then I can click on explore btn
+        When Order List api will call for null
+        When Order List api will call for order items null
+        When Order List api will call
+        When click on size drop down
+        When click on dropdown
+        When Order List api will call for order attribute null
+        When Order List api will call for order content type video
+        Then renders an video if the type is video
+        When Order List api will call for order content type image
+        Then renders an image if the type is image
+        When click on delete icon modal will open
+        Then image will render for item
+        And video will render for item
+        When Delete api will call
+        And I can leave the screen with out errors
+       
+        
+
+
+    Scenario: User navigates to AddShoppingCartOrderItem
+        Given I am a User loading AddShoppingCartOrderItem
+        When I navigate to the AddShoppingCartOrderItem
+        And I can input the information
+        And I can click the button
+        Then AddShoppingCartOrderItem will be added with out errors
+        And I can leave the screen with out errors
+
+        

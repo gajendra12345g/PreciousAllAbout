@@ -1,0 +1,13 @@
+Feature: OrderManagements
+
+Scenario: User navigates to OrderManagementsPage
+        Given I am a User loading OrderManagementsPage
+        When I navigate to the OrderManagementsPage
+        Then OrderManagementsPage will load with out errors
+        When User click on All tab 
+        Then active state will be 1
+        When User click on member tab 
+        Then active state will change to 2
+        When User click on group tab 
+        Then active state will change to 3
+       

@@ -1,0 +1,7 @@
+Feature: multitieredproduct
+
+    Scenario: User navigates to multitieredproduct
+        Given I am a User loading multitieredproduct
+        When I navigate to the multitieredproduct
+        And I can enter text with out errors
+        And allProducts api will load

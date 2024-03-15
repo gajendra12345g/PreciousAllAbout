@@ -1,0 +1,8 @@
+Feature: FeaturedPhotographer
+
+    Scenario: User navigates to FeaturedPhotographer
+        Given I am a User loading FeaturedPhotographer
+        When I navigate to the FeaturedPhotographer
+        Then FeaturedPhotographer will load with out errors
+        Then Search api will load
+        And I can leave the screen with out errors

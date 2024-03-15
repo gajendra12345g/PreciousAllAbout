@@ -1,0 +1,31 @@
+Feature: UserProfilePrivacyAndSecurity
+
+    Scenario: User navigates to UserProfilePrivacyAndSecurity
+        Given I am a User loading UserProfilePrivacyAndSecurity
+        When I navigate to the UserProfilePrivacyAndSecurity
+        Then UserProfilePrivacyAndSecurity will load with out errors
+        When user can input old password
+        Then old password should be change
+        When user can input new password
+        Then new password should be change
+        When user can input confirm password
+        Then confirm password should be change
+        When user set notification visibility
+        Then visibility should be change
+        When user set security alert
+        Then alert should be change
+
+    Scenario: User Can chnage password
+        Given I am a User loading UserProfilePrivacyAndSecurity
+        When I navigate to the UserProfilePrivacyAndSecurity
+        Then UserProfilePrivacyAndSecurity will load with out errors
+        When user can input old password
+        Then old password should be change
+        When user can input new password
+        Then new password should be change
+        When user can input confirm password
+        Then confirm password should be change
+        When user submit the form
+        Then get error confrm password not matched
+        When user input confirmpass same as new pass and submit
+        Then pass update successfully

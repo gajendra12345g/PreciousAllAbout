@@ -1,0 +1,7 @@
+Feature: LandingPageContributor
+
+    Scenario: User navigates to Contributor LandingPage
+        Given I am a User loading Contributor LandingPage
+        When I navigate to the Contributor LandingPage
+        Then Contributor LandingPage will load with out errors
+        And I can leave the screen with out errors

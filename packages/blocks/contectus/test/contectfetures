@@ -1,0 +1,18 @@
+Feature: contactus
+
+    Scenario: User navigates to contactus
+        Given I am a User loading contactus
+        When I navigate to the contactus
+        Then Component render without error
+        When user input the name
+        Then Name should be match
+        When user input the email
+        Then Email should be match
+        When user input the phone number
+        Then Phone number should be match
+        When user input the subject
+        Then Subject should be match
+        When user input the summary
+        Then Summary should be match
+        When user submit the form successfully
+        Then all field should reset

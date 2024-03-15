@@ -1,0 +1,26 @@
+Feature: UserManagement
+
+Scenario: User navigates to UserManagementPage
+        Given I am a User loading UserManagementPage
+        When I navigate to the UserManagementPage
+        Then UserManagementPage will load with out errors
+        When Get User Api will call
+        Then all user data will display on the table
+        When User Click on Delete Icon
+        Then DeleteModal will open
+        When User Click on Cancel button
+        Then DeleteModal will close
+        When DeleteUserApi will call when user click on Confirm button
+        Then Deleted User will remove from table
+        When SearchUserApi will call when user search in search input
+        Then Searched User will show on the table
+        When SortApi will call when user select sort_order
+        Then Sorted user list will on the table
+        When User click on All tab 
+        Then active state will be 0
+        When User click on member tab 
+        Then active state will change to 1
+        When User click on group tab 
+        Then active state will change to 2
+        When PaginationApi will call when user click on specific page
+        Then Specific Userlist will on the table according to page number

@@ -1,0 +1,35 @@
+Feature: UserProfileSetting
+
+    Scenario: User navigates to UserProfileSetting
+        Given I am a User loading UserProfileSetting
+        When I navigate to the UserProfileSetting
+        Then UserProfileSetting will load with out errors
+        When User change new content setting
+        Then new content state should be change
+        When User change updates setting
+        Then updates state should be change
+        When User change special and promotions setting
+        Then special and promotions state should be change
+        When User change inApp setting
+        Then inApp state should be change
+        When User change email setting
+        Then email state should be change
+        When User change both setting
+        Then both state should be change
+    
+     Scenario: User navigates to UserProfileSetting Page
+        Given I am a User loading UserProfileSetting
+        When I navigate to the UserProfileSetting
+        Then UserProfileSetting will load with out errors
+        When User change new content setting
+        Then new content state should be change
+        When User change updates setting
+        Then updates state should be change
+        When User change special and promotions setting
+        Then special and promotions state should be change
+        When User change inApp setting
+        Then inApp state should be change
+        When User change email setting
+        Then email state should be change
+        When User change both setting
+        Then both state should be change
